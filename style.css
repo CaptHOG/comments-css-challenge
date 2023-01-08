@@ -1,0 +1,31 @@
+body {
+  background-color: hsl(228, 33%, 97%);
+}
+
+.commentThread {
+  width: 700px;
+}
+
+.commentHeader {
+  display: flex;
+  height: 50px;
+}
+
+.commentVoting {
+  display: flex;
+  float: left;
+  flex-direction: column;
+}
+
+.commentMain {
+  display: flex;
+}
+
+.comment {
+  background-color: hsl(0, 0%, 100%);
+  margin: 20px auto;
+}
+
+.commentReplies {
+  margin-left: 30px;
+}

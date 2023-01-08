@@ -6,7 +6,7 @@
 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <!-- Fonts from google -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,40 +21,69 @@
   </style>
 </head>
 <body>
-
+<main class="commentThread">
   <!-- Comment #1 -->
-  12
-  <img src="./images/avatars/image-amyrobson.png" alt="profile" />
-  amyrobson 
-  1 month ago
-  Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.
+  <section class="comment">
+    <div class="commentVoting">
+      <button>+</button>
+      <p>12</p>
+      <button>-</button>
+    </div>
+    <div class="commentBody">
+      <div class="commentHeader">
+        <img src="./images/avatars/image-amyrobson.png" alt="profile" height="40px" width="40px"/>
+        <p>amyrobson</p> 
+        <p>1 month ago</p>
+      </div>
+      <div class="commentMain">
+        <p>Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.</p>
+      </div>
+    </div>
+  </section>
 
   <!-- Comment #2 -->
-  5
-  <img src="./images/avatars/image-maxblagun.png" alt="profile" />
-  maxblagun 
-  2 weeks ago
-  Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!
+  <section class="comment">
+    <div class="commentHeader">
+      <p>5</p>
+      <img src="./images/avatars/image-maxblagun.png" alt="profile" height="40px" width="40px"/>
+      <p>maxblagun</p> 
+      <p>2 weeks ago</p>
+    </div>
+    <div class="commentBody">
+      <p>Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to sectione into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!</p>
+    </div>
+  </section>
 
   <!-- Comment #3 (Reply to comment #2) -->
-  4
-  <img src="./images/avatars/image-ramsesmiron.png" alt="profile" />
-  ramsesmiron 
-  1 week ago
-  @maxblagun If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.
+  <section class="comment commentReplies">
+    <div class="commentHeader">
+      <p>4</p>
+      <img src="./images/avatars/image-ramsesmiron.png" alt="profile" height="40px" width="40px"/>
+      <p>ramsesmiron</p> 
+      <p>1 week ago</p>
+    </div>
+    <div class="commentBody">
+      <p>@maxblagun If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.</p>
+    </div>
+  </section>
 
   <!-- Comment #4 (Reply to comment #2) -->
-  2
-  <img src="./images/avatars/image-juliusomo.png" alt="profile" />
-  juliusomo 
-  2 days ago
-  @ramsesmiron I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.
-
-
+  <section class="comment commentReplies">
+    <div class="commentHeader">
+      <p>2</p>
+      <img src="./images/avatars/image-juliusomo.png" alt="profile" height="40px" width="40px"/>
+      <p>juliusomo</p> 
+      <p>2 days ago</p>
+    </div>
+    <div class="commentBody">
+      <p>@ramsesmiron I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.</p>
+    </div>
+  </section>
+</main>
   
-  <div class="attribution">
-    Challenge adapted from <a href="https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer class="attribution">
+    <p>Challenge adapted from <a href="https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9" target="_blank">Frontend Mentor</a>.</p>
+    <p>Coded by <a href="#">Your Name Here</a>.</p>
+  </footer>
 </body>
 </html>
