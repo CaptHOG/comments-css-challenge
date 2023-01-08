@@ -1,5 +1,6 @@
 body {
   background-color: hsl(228, 33%, 97%);
+  text-align: -webkit-center;
 }
 
 .commentThread {
@@ -17,6 +18,11 @@ body {
   flex-direction: column;
 }
 
+.icons {
+  display: flex;
+  align-items: center;
+}
+
 .commentMain {
   display: flex;
 }
@@ -28,4 +34,8 @@ body {
 
 .commentReplies {
   margin-left: 30px;
+}
+
+textarea {
+  font-size: 16px;
 }
